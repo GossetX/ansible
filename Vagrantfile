@@ -14,8 +14,9 @@ Vagrant.configure("2") do |config|
       machine.vm.hostname = "%s.example.org" % name
       machine.vm.network :private_network, ip: ip
       machine.vm.provider "virtualbox" do |v|
+	  v.linked_clone = true
           v.name = name
-          v.customize ["modifyvm", :id, "--memory", 200]
+          v.memory = 200
       end
     end
   end
