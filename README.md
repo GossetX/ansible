@@ -82,6 +82,8 @@ ssh-keygen
 sudo apt-get install -y python-yaml python-jinja2 python-paramiko python-crypto git
 
 # clone this repo on the control machine
+# this repo contains inventory files, exercises and playbooks we'll use during #
+# our workshop
 git clone https://github.com/gossetx/ansible.git
 cd ansible
 
