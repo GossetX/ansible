@@ -1,7 +1,6 @@
-Ansible tutorial
-================
+# Ansible tutorial
 
-
+<img height="250px" src="images/ansible.svg" />
 
 This tutorial presents ansible step-by-step. You'll need to have a (virtual or
 physical) machine to act as an ansible node. A vagrant environment is provided for 
