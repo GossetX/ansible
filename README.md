@@ -1,6 +1,8 @@
 Ansible tutorial
 ================
 
+
+
 This tutorial presents ansible step-by-step. You'll need to have a (virtual or
 physical) machine to act as an ansible node. A vagrant environment is provided for 
 going through this tutorial.
@@ -106,8 +108,6 @@ Just in case you want to skip to a specific step, here is a topic table of conte
 - [11. Variables again](https://github.com/leucos/ansible-tuto/tree/master/step-11)
 - [12. Migrating to roles](https://github.com/leucos/ansible-tuto/tree/master/step-12)
 - [13. Using tags](https://github.com/leucos/ansible-tuto/tree/master/step-13)
-- [14. Roles dependencies (TBD)](https://github.com/leucos/ansible-tuto/tree/master/step-14)
-- [15. Debugging (TBD)](https://github.com/leucos/ansible-tuto/tree/master/step-15)
 - [99. The end](https://github.com/leucos/ansible-tuto/tree/master/step-99)
 
 ## Contributing
