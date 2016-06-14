@@ -74,7 +74,7 @@ of items, and use each item in an action like this:
       when: result|failed
 
     - name: Deploy our awesome application
-      git: repo=https://github.com/leucos/ansible-tuto-demosite.git dest=/var/www/awesome-app
+      git: repo=https://github.com/gossetx/ansible-demosite.git dest=/var/www/awesome-app
       tags: deploy
 
     - name: Deactivates the default virtualhost
@@ -166,4 +166,4 @@ PLAY RECAP *********************
 host1.example.org              : ok=2    changed=1    unreachable=0    failed=0    
 ```
  
-Ok, let's deploy another web server in [step-09](https://github.com/leucos/ansible-tuto/tree/master/step-09).
+Ok, let's deploy another web server in [step-09](https://github.com/gossetx/ansible/tree/master/step-09).

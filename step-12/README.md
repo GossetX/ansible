@@ -12,7 +12,7 @@ they're listed in
 but my favorite is probably roles dependencies: role B can depend on
 another role A. Thus, when applying role B, role A will automatically be
 applied too. We'll see this in the [next
-chapter](https://github.com/leucos/ansible-tuto/tree/master/step-13),
+chapter](https://github.com/gossetx/ansible/tree/master/step-13),
 but for now, let's refactor our playbook to use roles.
 
 # Roles structures
@@ -236,7 +236,7 @@ This concludes our migration to roles. It was quite easy, and adds a
 bunch of features to our playbook that we'll use in a future step.
 
 In
-[step-13](https://github.com/leucos/ansible-tuto/tree/master/step-13),
+[step-13](https://github.com/gossetx/ansible/tree/master/step-13),
 we will see how we can use tags to select which parts of our playbook we
 want to run.
 

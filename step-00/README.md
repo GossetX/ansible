@@ -67,5 +67,5 @@ To check your ansible version use the command `ansible --version`. The output sh
         config file = /etc/ansible/ansible.cfg
         configured module search path = Default w/o overrides
 
-Now head to the first step in [step-01](https://github.com/leucos/ansible-tuto/tree/master/step-01).
+Now head to the first step in [step-01](https://github.com/gossetx/ansible/tree/master/step-01).
 

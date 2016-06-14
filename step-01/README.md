@@ -58,5 +58,5 @@ host2.example.org | success >> {
 
 Good! All 3 hosts are alive and kicking, and ansible can talk to them.
 
-Now head to next step in directory [step-02](https://github.com/leucos/ansible-tuto/tree/master/step-02).
+Now head to next step in directory [step-02](https://github.com/gossetx/ansible/tree/master/step-02).
 

@@ -142,6 +142,6 @@ This is required because the haproxy playbook needs to pick facts from
 hosts in this group. If we don't do this, ansible will complain saying
 that `ansible_eth1` key doesn't exist.
 
-Now on to the next chapter about "Migrating to Roles!", in [step-12](https://github.com/leucos/ansible-tuto/tree/master/step-12).
+Now on to the next chapter about "Migrating to Roles!", in [step-12](https://github.com/gossetx/ansible/tree/master/step-12).
 
 
