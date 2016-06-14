@@ -81,13 +81,12 @@ ssh-keygen
 # install required packages
 sudo apt-get install -y python-yaml python-jinja2 python-paramiko python-crypto git
 
-# install ansible
-cd /vagrant
-./ubuntu_install_ansible.sh
-
 # clone this repo on the control machine
 git clone https://github.com/gossetx/ansible.git
 cd ansible
+
+# install ansible
+./bin/ubuntu_install_ansible.sh
 ```
 
 Reference: [Installing Ansible](http://docs.ansible.com/ansible/intro_installation.html)
