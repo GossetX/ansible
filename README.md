@@ -2,11 +2,7 @@
 
 <img height="250px" src="images/ansible.svg" />
 
-This tutorial presents ansible step-by-step. You'll need to have a (virtual or
-physical) machine to act as an ansible node. A vagrant environment is provided for 
-going through this tutorial.
-
-Ansible is a configuration management software that let's you control and
+Ansible is a configuration management software that lets you control and
 configure nodes from  another machine. What makes it different from other
 management software is that ansible  uses (potentially existing) SSH
 infrastructure, while others (chef, puppet, ...) need a specific PKI
@@ -22,66 +18,77 @@ accessible 'master' to be able to configure remote nodes: it's the nodes
 that need to be accessible (we'll see later that 'hidden' nodes can pull their
 configuration too!), and most of the time they are.
 
-# Prerequisites for Ansible
 
-You need the following python modules on your machine (the machine you run ansible 
-on) 
-- python-yaml
-- python-jinja2
+# Uses
 
-On Debian/Ubuntu run:
-``sudo apt-get install python-yaml python-jinja2 python-paramiko python-crypto``
+- Use cases
+    - Provisioning
+    - Configuration management
+    - App deployment
+    - Continuous delivery
+    - Security & compliance
+    - Orchestration
+- Integrations
+    - Infrastructure
+    - Networks
+    - Containers
+    - Cloud
+    - Services & applications
 
-We're also assuming you have a keypair in your ~/.ssh directory.
+[Reference](https://www.ansible.com/red-hat)
 
-# Installing Ansible
 
-## From source
+# Architecture
 
-Ansible devel branch is always usable, so we'll run straight from a git checkout.
-You might need to install git for this (`sudo apt-get install git` on Debian/Ubuntu).
+<img height="400px" src="images/diagram.png" />
 
-```bash
-git clone git://github.com/ansible/ansible.git
-cd ./ansible
+
+# Schedule
+
+- Day 1: Ansible Fundamentals
+- Day 2: Beyond the basics: Roles, Modules, Encryption, Management
+- Day 3: Applied Ansible
+
+
+# Notes
+
+Etherpad: https://beta.etherpad.org/p/vgansible
+
+
+# Initial setup
+
+Bring up vagrant boxes:
+
+```
+vagrant up
 ```
 
-At this point, we can load the ansible environment:
+When finished, connect to control machine:
 
-```bash
-source ./hacking/env-setup
+```
+vagrant ssh control
 ```
 
-## From a deb package
+On control machine:
 
-When running from an installed package, this is absolutely not necessary. If
-you prefer running from a debian package ansible, provides a `make target` to
-build it. You need a few packages to build the deb:
-
-```bash
-sudo apt-get install make fakeroot cdbs python-support
-git clone git://github.com/ansible/ansible.git
-cd ./ansible
-make deb
-sudo dpkg -i ../ansible_1.1_all.deb (version may vary)
 ```
+# generate SSH keypair for deployment to managed hosts
+ssh-keygen
 
-We'll assume you're using the deb packages in the rest of this tutorial.
+# install required packages
+sudo apt-get install -y python-yaml python-jinja2 python-paramiko python-crypto git
 
-# Cloning the tutorial
+# install ansible
+cd /vagrant
+./ubuntu_install_ansible.sh
 
-```bash
+# clone this repo on the control machine
 git clone https://github.com/gossetx/ansible.git
 cd ansible
 ```
 
-# Using Vagrant with the tutorial
+Reference: [Installing Ansible](http://docs.ansible.com/ansible/intro_installation.html)
 
-It's highly recommended to use Vagrant to follow this tutorial. If you don't have 
-it already, setting up should be quite easy and is described in [step-00/README.md](https://github.com/gossetx/ansible/tree/master/step-00/README.md).
-
-If you wish to proceed without Vagrant (not recommended!), go straight to
-[step-01/README.md](https://github.com/gossetx/ansible/tree/master/step-01).
 
 ## Terminology
 
