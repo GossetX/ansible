@@ -57,6 +57,9 @@ Etherpad: https://beta.etherpad.org/p/vgansible
 
 # Initial setup
 
+First, download the [Vagrantfile](Vagrantfile) providing the environment for our class.
+
+
 Bring up vagrant boxes:
 
 ```
