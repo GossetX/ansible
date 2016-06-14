@@ -16,11 +16,11 @@
     "docs:prepare": "gitbook install",
     "docs:watch": "npm run docs:prepare && gitbook serve",
     "docs:build": "npm run docs:prepare && rm -rf _book && gitbook build",
-    "docs:publish": "npm run docs:build && cd _book && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git commit -am 'Update docs' && git push https://github.com/leucos/ansible-tuto gh-pages --force"
+    "docs:publish": "npm run docs:build && cd _book && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git commit -am 'Update docs' && git push git@github.com:gossetx/ansible gh-pages --force"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leucos/ansible-tuto.git"
+    "url": "git+https://github.com/gossetx/ansible.git"
   },
   "keywords": [
     "ansible",
@@ -29,7 +29,7 @@
   "author": "",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/leucos/ansible-tuto/issues"
+    "url": "https://github.com/leucos/gossetx/issues"
   },
-  "homepage": "https://github.com/leucos/ansible-tuto#readme"
+  "homepage": "https://github.com/gossetx/ansible#readme"
 }
