@@ -1,0 +1,461 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>03 Groups and variables · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../step-04/" />
+    
+    
+    <link rel="prev" href="../step-02/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../step-00/">
+            
+                <a href="../step-00/">
+            
+                    
+                    00 Vagrant Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../step-01/">
+            
+                <a href="../step-01/">
+            
+                    
+                    01 Basic inventory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../step-02/">
+            
+                <a href="../step-02/">
+            
+                    
+                    02 First modules and facts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    03 Groups and variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../step-04/">
+            
+                <a href="../step-04/">
+            
+                    
+                    04 Playbooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../step-05/">
+            
+                <a href="../step-05/">
+            
+                    
+                    05 Playbooks, pushing files on nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../step-06/">
+            
+                <a href="../step-06/">
+            
+                    
+                    06 Playbooks and failures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../step-07/">
+            
+                <a href="../step-07/">
+            
+                    
+                    07 Playbook conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../step-08/">
+            
+                <a href="../step-08/">
+            
+                    
+                    08 Git module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../step-09/">
+            
+                <a href="../step-09/">
+            
+                    
+                    09 Extending to several hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../step-10/">
+            
+                <a href="../step-10/">
+            
+                    
+                    10 Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../step-11/">
+            
+                <a href="../step-11/">
+            
+                    
+                    11 Variables again
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../step-12/">
+            
+                <a href="../step-12/">
+            
+                    
+                    12 Migrating to roles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../step-99/">
+            
+                <a href="../step-99/">
+            
+                    
+                    99 The end
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >03 Groups and variables</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ansible-tutorial">Ansible tutorial</h1>
+<h2 id="grouping-hosts">Grouping hosts</h2>
+<p>Hosts in inventory can be grouped arbitrarily. For instance, you could have a <code>debian</code> 
+group, a <code>web-servers</code> group, a <code>production</code> group, etc...</p>
+<pre><code>[debian]
+host0.example.org
+host1.example.org
+host2.example.org
+</code></pre><p>This can even be expressed shorter:</p>
+<pre><code>[debian]
+host[0:2].example.org
+</code></pre><p>If you wish to use child groups, just define a <code>[groupname:children]</code> and add child 
+groups in it.
+For instance, let&apos;s say we have various flavors of linux running, we could organize 
+our inventory like this:</p>
+<pre><code>[ubuntu]
+host0.example.org
+
+[debian]
+host[1:2].example.org
+
+[linux:children]
+ubuntu
+debian
+</code></pre><p>Grouping of course, leverages configuration mutualization.</p>
+<h2 id="setting-variables">Setting variables</h2>
+<p>You can assign variables to hosts in several places: inventory file, host vars
+files, group vars files, etc...</p>
+<p>I usually set most of my variables in group/host vars files (more on that later). 
+However, I often use some variables directly in the inventory file, such as <code>ansible_host</code> 
+which sets the IP address for the host. Ansible by default resolves hosts&apos; name 
+when it attempts to connect via SSH. But when you&apos;re bootstrapping a host, it might 
+not have its definitive ip address yet. <code>ansible_host</code> comes in handy here.</p>
+<p>When using <code>ansible-playbook</code> command (not the regular <code>ansible</code> command), variables
+can also be set with <code>--extra-vars</code> (or <code>-e</code>) command line switch.
+<code>ansible-playbook</code> command will be covered in the next step.</p>
+<p><code>ansible_port</code>, as you can guess, has the same function regarding the ssh port ansible 
+will try to connect at.</p>
+<pre><code>[ubuntu]
+host0.example.org ansible_host=192.168.0.12 ansible_port=2222
+</code></pre><p>Ansible will look for additional variables definitions in group and host variable 
+files. These files will be searched in directories <code>group_vars</code> and <code>host_vars</code>, 
+below the directory where the main inventory file is located.</p>
+<p>The files will be searched by name. For instance, using the previously mentioned inventory file,
+<code>host0.example.org</code> variables will be searched in those files:</p>
+<ul>
+<li><code>group_vars/linux</code></li>
+<li><code>group_vars/ubuntu</code></li>
+<li><code>host_vars/host0.example.org</code></li>
+</ul>
+<p>It doesn&apos;t matter if those files do not exist, but if they do, ansible will use them.</p>
+<p>Now that we know the basics of modules, inventories and variables, let&apos;s
+explore the real power of Ansible with playbooks.</p>
+<p>Head to <a href="https://github.com/gossetx/ansible/tree/master/step-04" _target="blank">step-04</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../step-02/" class="navigation navigation-prev " aria-label="Previous page: 02 First modules and facts">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../step-04/" class="navigation navigation-next " aria-label="Next page: 04 Playbooks">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"03 Groups and variables","level":"1.5","depth":1,"next":{"title":"04 Playbooks","level":"1.6","depth":1,"path":"step-04/README.md","ref":"step-04/README.md","articles":[]},"previous":{"title":"02 First modules and facts","level":"1.4","depth":1,"path":"step-02/README.md","ref":"step-02/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.0.x","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"step-03/README.md","mtime":"2016-06-14T12:19:24.689Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-15T12:22:27.804Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

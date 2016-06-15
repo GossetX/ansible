@@ -1,0 +1,552 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>08 Git module · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../step-09/" />
+    
+    
+    <link rel="prev" href="../step-07/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../step-00/">
+            
+                <a href="../step-00/">
+            
+                    
+                    00 Vagrant Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../step-01/">
+            
+                <a href="../step-01/">
+            
+                    
+                    01 Basic inventory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../step-02/">
+            
+                <a href="../step-02/">
+            
+                    
+                    02 First modules and facts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../step-03/">
+            
+                <a href="../step-03/">
+            
+                    
+                    03 Groups and variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../step-04/">
+            
+                <a href="../step-04/">
+            
+                    
+                    04 Playbooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../step-05/">
+            
+                <a href="../step-05/">
+            
+                    
+                    05 Playbooks, pushing files on nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../step-06/">
+            
+                <a href="../step-06/">
+            
+                    
+                    06 Playbooks and failures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../step-07/">
+            
+                <a href="../step-07/">
+            
+                    
+                    07 Playbook conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    08 Git module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../step-09/">
+            
+                <a href="../step-09/">
+            
+                    
+                    09 Extending to several hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../step-10/">
+            
+                <a href="../step-10/">
+            
+                    
+                    10 Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../step-11/">
+            
+                <a href="../step-11/">
+            
+                    
+                    11 Variables again
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../step-12/">
+            
+                <a href="../step-12/">
+            
+                    
+                    12 Migrating to roles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../step-99/">
+            
+                <a href="../step-99/">
+            
+                    
+                    99 The end
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >08 Git module</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ansible-tutorial">Ansible tutorial</h1>
+<h2 id="deploying-our-website-from-git">Deploying our website from git</h2>
+<p>We&apos;ve installed apache, pushed our virtualhost and restarted the server safely.
+Now we&apos;ll use the git module to deploy our application.</p>
+<h1 id="the-git-module">The git module</h1>
+<p>Well, this is a kind of break. Nothing necessarily new here. The <code>git</code> module is 
+just another module. But we&apos;ll try it out just for fun. And we&apos;ll be familiar with 
+it when it comes to <code>ansible-pull</code> later on.</p>
+<p>Our virtualhost is set, but we need a few changes to finish our deployment.
+First, we&apos;re deploying a PHP application. So we need to install the
+<code>libapache2-mod-php5</code> package. Second, we have to install <code>git</code> since the
+git module (used to clone our application&apos;s git repository) uses it.</p>
+<p>We could do it like this:</p>
+<pre><code>...
+- name: Installs apache web server
+  apt: pkg=apache2 state=installed update_cache=true
+
+- name: Installs php5 module
+  apt: pkg=libapache2-mod-php5 state=installed
+
+- name: Installs git
+  apt: pkg=git state=installed
+...
+</code></pre><p>but Ansible provides a more readable way to write this. Ansible can loop over a series 
+of items, and use each item in an action like this:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">- hosts:</span> web
+<span class="hljs-attr">  tasks:</span>
+<span class="hljs-attr">    - name:</span> Updates apt cache
+<span class="hljs-attr">      apt:</span> update_cache=<span class="hljs-literal">true</span>
+
+<span class="hljs-attr">    - name:</span> Installs necessary packages
+<span class="hljs-attr">      apt:</span> pkg={{ item }} state=latest 
+<span class="hljs-attr">      with_items:</span>
+<span class="hljs-bullet">        -</span> apache2
+<span class="hljs-bullet">        -</span> libapache2-mod-php5
+<span class="hljs-bullet">        -</span> git
+
+<span class="hljs-attr">    - name:</span> Push future default virtual host configuration
+<span class="hljs-attr">      copy:</span> src=files/awesome-app dest=/etc/apache2/sites-available/ mode=<span class="hljs-number">0640</span>
+
+<span class="hljs-attr">    - name:</span> Activates our virtualhost
+<span class="hljs-attr">      command:</span> a2ensite awesome-app
+
+<span class="hljs-attr">    - name:</span> Check that our config is valid
+<span class="hljs-attr">      command:</span> apache2ctl configtest
+<span class="hljs-attr">      register:</span> result
+<span class="hljs-attr">      ignore_errors:</span> <span class="hljs-literal">True</span>
+
+<span class="hljs-attr">    - name:</span> Rolling back - Restoring old default virtualhost
+<span class="hljs-attr">      command:</span> a2ensite default
+<span class="hljs-attr">      when:</span> result|failed
+
+<span class="hljs-attr">    - name:</span> Rolling back - Removing out virtualhost
+<span class="hljs-attr">      command:</span> a2dissite awesome-app
+<span class="hljs-attr">      when:</span> result|failed
+
+<span class="hljs-attr">    - name:</span> Rolling back - Ending playbook
+<span class="hljs-attr">      fail:</span> msg=<span class="hljs-string">&quot;Configuration file is not valid. Please check that before re-running the playbook.&quot;</span>
+<span class="hljs-attr">      when:</span> result|failed
+
+<span class="hljs-attr">    - name:</span> Deploy our awesome application
+<span class="hljs-attr">      git:</span> repo=https://github.com/gossetx/ansible-demosite.git dest=/var/www/awesome-app
+<span class="hljs-attr">      tags:</span> deploy
+
+<span class="hljs-attr">    - name:</span> Deactivates the default virtualhost
+<span class="hljs-attr">      command:</span> a2dissite default
+
+<span class="hljs-attr">    - name:</span> Deactivates the default ssl virtualhost
+<span class="hljs-attr">      command:</span> a2dissite default-ssl
+<span class="hljs-attr">      notify:</span>
+<span class="hljs-bullet">        -</span> restart apache
+
+<span class="hljs-attr">  handlers:</span>
+<span class="hljs-attr">    - name:</span> restart apache
+<span class="hljs-attr">      service:</span> name=apache2 state=restarted
+</code></pre>
+<p>Here we go:</p>
+<pre><code class="lang-bash">$ ansible-playbook -i step-08/hosts <span class="hljs-_">-l</span> host1.example.org step-08/apache.yml
+
+PLAY [web] ********************* 
+
+GATHERING FACTS ********************* 
+ok: [host1.example.org]
+
+TASK: [Updates apt cache] ********************* 
+ok: [host1.example.org]
+
+TASK: [Installs necessary packages] ********************* 
+changed: [host1.example.org] =&gt; (item=apache2,libapache2-mod-php5,git)
+
+TASK: [Push future default virtual host configuration] ********************* 
+changed: [host1.example.org]
+
+TASK: [Activates our virtualhost] ********************* 
+changed: [host1.example.org]
+
+TASK: [Check that our config is valid] ********************* 
+changed: [host1.example.org]
+
+TASK: [Rolling back - Restoring old default virtualhost] ********************* 
+skipping: [host1.example.org]
+
+TASK: [Rolling back - Removing out virtualhost] ********************* 
+skipping: [host1.example.org]
+
+TASK: [Rolling back - Ending playbook] ********************* 
+skipping: [host1.example.org]
+
+TASK: [Deploy our awesome application] ********************* 
+changed: [host1.example.org]
+
+TASK: [Deactivates the default virtualhost] ********************* 
+changed: [host1.example.org]
+
+TASK: [Deactivates the default ssl virtualhost] ********************* 
+changed: [host1.example.org]
+
+NOTIFIED: [restart apache] ********************* 
+changed: [host1.example.org]
+
+PLAY RECAP ********************* 
+host1.example.org              : ok=10   changed=8    unreachable=0    failed=0
+</code></pre>
+<p>You can now browse to <a href="http://192.168.33.11" _target="blank">http://192.168.33.11</a>, and it should display a
+kitten, and the server hostname.</p>
+<p>Note the <code>tags: deploy</code> line allows you to execute just a part of the playbook. 
+Let&apos;s say you push a new version for your site. You want to speed up and execute 
+only the part that takes care of deployment. Tags allows you to do it.
+Of course, &quot;deploy&quot; is just a string, it doesn&apos;t have any specific
+meaning and can be anything. Let&apos;s see how to use it:</p>
+<pre><code class="lang-bash">$ ansible-playbook -i step-08/hosts <span class="hljs-_">-l</span> host1.example.org step-08/apache.yml -t deploy 
+X11 forwarding request failed on channel 0
+
+PLAY [web] ********************* 
+
+GATHERING FACTS ********************* 
+ok: [host1.example.org]
+
+TASK: [Deploy our awesome application] ********************* 
+changed: [host1.example.org]
+
+PLAY RECAP ********************* 
+host1.example.org              : ok=2    changed=1    unreachable=0    failed=0
+</code></pre>
+<p>Ok, let&apos;s deploy another web server in <a href="https://github.com/gossetx/ansible/tree/master/step-09" _target="blank">step-09</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../step-07/" class="navigation navigation-prev " aria-label="Previous page: 07 Playbook conditionals">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../step-09/" class="navigation navigation-next " aria-label="Next page: 09 Extending to several hosts">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"08 Git module","level":"1.10","depth":1,"next":{"title":"09 Extending to several hosts","level":"1.11","depth":1,"path":"step-09/README.md","ref":"step-09/README.md","articles":[]},"previous":{"title":"07 Playbook conditionals","level":"1.9","depth":1,"path":"step-07/README.md","ref":"step-07/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.0.x","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"step-08/README.md","mtime":"2016-06-14T12:19:24.692Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-15T12:22:27.804Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

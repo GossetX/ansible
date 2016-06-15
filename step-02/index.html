@@ -1,0 +1,532 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>02 First modules and facts · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../step-03/" />
+    
+    
+    <link rel="prev" href="../step-01/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../step-00/">
+            
+                <a href="../step-00/">
+            
+                    
+                    00 Vagrant Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../step-01/">
+            
+                <a href="../step-01/">
+            
+                    
+                    01 Basic inventory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    02 First modules and facts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../step-03/">
+            
+                <a href="../step-03/">
+            
+                    
+                    03 Groups and variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../step-04/">
+            
+                <a href="../step-04/">
+            
+                    
+                    04 Playbooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../step-05/">
+            
+                <a href="../step-05/">
+            
+                    
+                    05 Playbooks, pushing files on nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../step-06/">
+            
+                <a href="../step-06/">
+            
+                    
+                    06 Playbooks and failures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../step-07/">
+            
+                <a href="../step-07/">
+            
+                    
+                    07 Playbook conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../step-08/">
+            
+                <a href="../step-08/">
+            
+                    
+                    08 Git module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../step-09/">
+            
+                <a href="../step-09/">
+            
+                    
+                    09 Extending to several hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../step-10/">
+            
+                <a href="../step-10/">
+            
+                    
+                    10 Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../step-11/">
+            
+                <a href="../step-11/">
+            
+                    
+                    11 Variables again
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../step-12/">
+            
+                <a href="../step-12/">
+            
+                    
+                    12 Migrating to roles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../step-99/">
+            
+                <a href="../step-99/">
+            
+                    
+                    99 The end
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >02 First modules and facts</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ansible-tutorial">Ansible tutorial</h1>
+<h2 id="talking-with-nodes">Talking with nodes</h2>
+<p>Now we&apos;re good to go. Let&apos;s play with the command we saw in the previous chapter: 
+<code>ansible</code>. This command is the first one of three that ansible provides which interact 
+with nodes.</p>
+<h1 id="doing-something-useful">Doing something useful</h1>
+<p>In the previous command, <code>-m ping</code> means &quot;use module <em>ping</em>&quot;. This module is
+one of many available with ansible. <code>ping</code> module is really simple, it doesn&apos;t need any arguments.
+Modules that take arguments pass them via <code>-a</code> switch. Let&apos;s see a few other modules.</p>
+<h2 id="shell-module">Shell module</h2>
+<p>This module lets you execute a shell command on the remote host:</p>
+<pre><code class="lang-bash">ansible -i step-02/hosts -m shell <span class="hljs-_">-a</span> <span class="hljs-string">&apos;uname -a&apos;</span> host0.example.org
+</code></pre>
+<p>Output should look like:</p>
+<pre><code class="lang-bash">host0.example.org | success | rc=0 &gt;&gt;
+Linux host0.example.org 3.2.0-23-generic-pae <span class="hljs-comment">#36-Ubuntu SMP Tue Apr 10 22:19:09 UTC 2012 i686 i686 i386 GNU/Linux</span>
+</code></pre>
+<p>Easy!</p>
+<h2 id="copy-module">Copy module</h2>
+<p>No surprise, with this module you can copy a file from the controlling machine to 
+the node. Lets say we want to copy our <code>/etc/motd</code> to <code>/tmp</code> of our target node:</p>
+<pre><code class="lang-bash">ansible -i step-02/hosts -m copy <span class="hljs-_">-a</span> <span class="hljs-string">&apos;src=/etc/motd dest=/tmp/&apos;</span> host0.example.org
+</code></pre>
+<p>Output should look similar to:</p>
+<pre><code class="lang-bash">host0.example.org | success &gt;&gt; {
+    <span class="hljs-string">&quot;changed&quot;</span>: <span class="hljs-literal">true</span>, 
+    <span class="hljs-string">&quot;dest&quot;</span>: <span class="hljs-string">&quot;/tmp/motd&quot;</span>, 
+    <span class="hljs-string">&quot;group&quot;</span>: <span class="hljs-string">&quot;root&quot;</span>, 
+    <span class="hljs-string">&quot;md5sum&quot;</span>: <span class="hljs-string">&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</span>, 
+    <span class="hljs-string">&quot;mode&quot;</span>: <span class="hljs-string">&quot;0644&quot;</span>, 
+    <span class="hljs-string">&quot;owner&quot;</span>: <span class="hljs-string">&quot;root&quot;</span>, 
+    <span class="hljs-string">&quot;size&quot;</span>: 0, 
+    <span class="hljs-string">&quot;src&quot;</span>: <span class="hljs-string">&quot;/root/.ansible/tmp/ansible-1362910475.9-246937081757218/motd&quot;</span>, 
+    <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-string">&quot;file&quot;</span>
+}
+</code></pre>
+<p>Ansible (more accurately <em>copy</em> module executed on the node) replied back a bunch of 
+useful information in JSON format. We&apos;ll see how that can be used later.</p>
+<p>We&apos;ll see other useful modules below. Ansible has a huge 
+<a href="http://docs.ansible.com/list_of_all_modules.html" _target="blank">module list</a> that covers almost anything you
+can do on a system. If you can&apos;t find the right module, writing one is pretty
+easy (it doesn&apos;t even have to be Python, it just needs to speak JSON).</p>
+<h1 id="many-hosts-same-command">Many hosts, same command</h1>
+<p>Ok, the above stuff is fun, but we have many nodes to manage. Let&apos;s try that on
+other hosts too.</p>
+<p>Lets say we want to get some facts about the node, and, for instance,
+know which Ubuntu version we have deployed on nodes, it&apos;s pretty easy:</p>
+<pre><code>ansible -i step-02/hosts -m shell -a &apos;grep DISTRIB_RELEASE /etc/lsb-release&apos; all
+</code></pre><p><code>all</code> is a shortcut meaning &apos;all hosts found in inventory file&apos;. It would
+return:</p>
+<pre><code>host1.example.org | success | rc=0 &gt;&gt;
+DISTRIB_RELEASE=12.04
+
+host2.example.org | success | rc=0 &gt;&gt;
+DISTRIB_RELEASE=12.04
+
+host0.example.org | success | rc=0 &gt;&gt;
+DISTRIB_RELEASE=12.04
+</code></pre><h1 id="many-more-facts">Many more facts</h1>
+<p>That was easy. However, It would quickly become cumbersome if we
+wanted more information (ip addresses, RAM size, etc...). The solution
+comes from another really handy module (weirdly) called <code>setup</code>: it
+specializes in node&apos;s <em>facts</em> gathering.</p>
+<p>Try it out:</p>
+<pre><code>ansible -i step-02/hosts -m setup host0.example.org
+</code></pre><p>replies with lots of information:</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;ansible_facts&quot;</span>: {
+    <span class="hljs-string">&quot;ansible_all_ipv4_addresses&quot;</span>: [
+        <span class="hljs-string">&quot;192.168.0.60&quot;</span>
+    ], 
+    <span class="hljs-string">&quot;ansible_all_ipv6_addresses&quot;</span>: [], 
+    <span class="hljs-string">&quot;ansible_architecture&quot;</span>: <span class="hljs-string">&quot;x86_64&quot;</span>, 
+    <span class="hljs-string">&quot;ansible_bios_date&quot;</span>: <span class="hljs-string">&quot;01/01/2007&quot;</span>, 
+    <span class="hljs-string">&quot;ansible_bios_version&quot;</span>: <span class="hljs-string">&quot;Bochs&quot;</span>
+    },
+    ---snip---
+    <span class="hljs-string">&quot;ansible_virtualization_role&quot;</span>: <span class="hljs-string">&quot;guest&quot;</span>, 
+    <span class="hljs-string">&quot;ansible_virtualization_type&quot;</span>: <span class="hljs-string">&quot;kvm&quot;</span>
+}, 
+<span class="hljs-string">&quot;changed&quot;</span>: <span class="hljs-literal">false</span>, 
+<span class="hljs-string">&quot;verbose_override&quot;</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<p>It&apos;s been truncated for brevity, but you can find many interesting bits in the returned 
+data. You may also filter returned keys, in case you&apos;re looking for something specific.</p>
+<p>For instance, let&apos;s say you want to know how much memory you have on all your hosts, 
+easy with <code>ansible -i step-02/hosts -m setup -a &apos;filter=ansible_memtotal_mb&apos; all</code>:</p>
+<pre><code class="lang-json">host2.example.org | success &gt;&gt; {
+    <span class="hljs-string">&quot;ansible_facts&quot;</span>: {
+        <span class="hljs-string">&quot;ansible_memtotal_mb&quot;</span>: <span class="hljs-number">187</span>
+    }, 
+    <span class="hljs-string">&quot;changed&quot;</span>: <span class="hljs-literal">false</span>, 
+    <span class="hljs-string">&quot;verbose_override&quot;</span>: <span class="hljs-literal">true</span>
+}
+
+host1.example.org | success &gt;&gt; {
+    <span class="hljs-string">&quot;ansible_facts&quot;</span>: {
+        <span class="hljs-string">&quot;ansible_memtotal_mb&quot;</span>: <span class="hljs-number">187</span>
+    }, 
+    <span class="hljs-string">&quot;changed&quot;</span>: <span class="hljs-literal">false</span>, 
+    <span class="hljs-string">&quot;verbose_override&quot;</span>: <span class="hljs-literal">true</span>
+}
+
+host0.example.org | success &gt;&gt; {
+    <span class="hljs-string">&quot;ansible_facts&quot;</span>: {
+        <span class="hljs-string">&quot;ansible_memtotal_mb&quot;</span>: <span class="hljs-number">187</span>
+    }, 
+    <span class="hljs-string">&quot;changed&quot;</span>: <span class="hljs-literal">false</span>, 
+    <span class="hljs-string">&quot;verbose_override&quot;</span>: <span class="hljs-literal">true</span>
+}
+</code></pre>
+<p>Notice that hosts replied in different order compared to the previous output. This 
+is because ansible parallelizes communications with hosts!</p>
+<p>BTW, when using the setup module, you can use <code>*</code> in the <code>filter=</code> expression.
+It will act like a shell glob.</p>
+<h1 id="selecting-hosts">Selecting hosts</h1>
+<p>We saw that <code>all</code> means &apos;all hosts&apos;, but ansible provides a 
+<a href="http://docs.ansible.com/intro_patterns.html" _target="blank">lot of other ways to select hosts</a>:</p>
+<ul>
+<li><code>host0.example.org:host1.example.org</code> would run on host0.example.org and
+host1.example.org</li>
+<li><code>host*.example.org</code> would run on all hosts starting with &apos;host&apos; and ending with 
+&apos;.example.org&apos; (just like a shell glob too)</li>
+</ul>
+<p>There are other ways that involve groups, we&apos;ll see that in 
+<a href="https://github.com/gossetx/ansible/tree/master/step-03" _target="blank">step-03</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../step-01/" class="navigation navigation-prev " aria-label="Previous page: 01 Basic inventory">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../step-03/" class="navigation navigation-next " aria-label="Next page: 03 Groups and variables">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"02 First modules and facts","level":"1.4","depth":1,"next":{"title":"03 Groups and variables","level":"1.5","depth":1,"path":"step-03/README.md","ref":"step-03/README.md","articles":[]},"previous":{"title":"01 Basic inventory","level":"1.3","depth":1,"path":"step-01/README.md","ref":"step-01/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.0.x","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"step-02/README.md","mtime":"2016-06-14T12:19:24.689Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-15T12:22:27.804Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

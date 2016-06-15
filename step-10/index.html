@@ -1,0 +1,572 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>10 Templates · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../step-11/" />
+    
+    
+    <link rel="prev" href="../step-09/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../step-00/">
+            
+                <a href="../step-00/">
+            
+                    
+                    00 Vagrant Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../step-01/">
+            
+                <a href="../step-01/">
+            
+                    
+                    01 Basic inventory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../step-02/">
+            
+                <a href="../step-02/">
+            
+                    
+                    02 First modules and facts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../step-03/">
+            
+                <a href="../step-03/">
+            
+                    
+                    03 Groups and variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../step-04/">
+            
+                <a href="../step-04/">
+            
+                    
+                    04 Playbooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../step-05/">
+            
+                <a href="../step-05/">
+            
+                    
+                    05 Playbooks, pushing files on nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../step-06/">
+            
+                <a href="../step-06/">
+            
+                    
+                    06 Playbooks and failures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../step-07/">
+            
+                <a href="../step-07/">
+            
+                    
+                    07 Playbook conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../step-08/">
+            
+                <a href="../step-08/">
+            
+                    
+                    08 Git module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../step-09/">
+            
+                <a href="../step-09/">
+            
+                    
+                    09 Extending to several hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    10 Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../step-11/">
+            
+                <a href="../step-11/">
+            
+                    
+                    11 Variables again
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../step-12/">
+            
+                <a href="../step-12/">
+            
+                    
+                    12 Migrating to roles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../step-99/">
+            
+                <a href="../step-99/">
+            
+                    
+                    99 The end
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >10 Templates</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ansible-tutorial">Ansible tutorial</h1>
+<h2 id="templates">Templates</h2>
+<p>We&apos;ll use the <code>haproxy</code> as loadbalancer. Of course, install is just like we
+did for apache. But now configuration is a bit more tricky since we need to list 
+all web servers in haproxy&apos;s configuration. How can we do that?</p>
+<h1 id="haproxy-configuration-template">HAProxy configuration template</h1>
+<p>Ansible uses <a href="http://jinja.pocoo.org/docs/" _target="blank">Jinja2</a>, a templating engine for Python. 
+When you write Jinja2 templates, you can use any variable defined by Ansible.</p>
+<p>For instance, if you want to output the inventory_name of the host the template is 
+currently built for, you just can write <code>{{ inventory_hostname }}</code> in the Jinja template.</p>
+<p>Or if you need the IP of the first ethernet interface (which ansible knows thanks 
+to the <code>setup</code> module), you just write: <code>{{ ansible_eth1[&apos;ipv4&apos;][&apos;address&apos;] }}</code>
+in your template.</p>
+<p>Jinja2 templates also support conditionals, for-loops, etc...</p>
+<p>Let&apos;s make a <code>templates/</code> directory and create a Jinja template inside. We&apos;ll
+call  it <code>haproxy.cfg.j2</code>. We use the <code>.j2</code> extension by convention, to make
+it obvious that this  is a Jinja2 template, but this is not necessary.</p>
+<pre><code class="lang-jinja"><span class="xml">global
+    daemon
+    maxconn 256
+
+defaults
+    mode http
+    timeout connect 5000ms
+    timeout client 50000ms
+    timeout server 50000ms
+
+listen cluster
+    bind </span><span class="hljs-template-variable">{{ ansible_eth1[&apos;ipv4&apos;][&apos;address&apos;] }}</span><span class="xml">:80
+    mode http
+    stats enable
+    balance roundrobin
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">for</span></span> backend <span class="hljs-keyword">in</span> groups[&apos;web&apos;] %}</span><span class="xml">
+    server </span><span class="hljs-template-variable">{{ hostvars[backend][&apos;ansible_hostname&apos;] }}</span><span class="xml"> </span><span class="hljs-template-variable">{{ hostvars[backend][&apos;ansible_eth1&apos;][&apos;ipv4&apos;][&apos;address&apos;] }}</span><span class="xml"> check port 80
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endfor</span></span> %}</span><span class="xml">
+    option httpchk HEAD /index.php HTTP/1.0
+</span></code></pre>
+<p>We have many new things going on here. </p>
+<p>First, <code>{{ ansible_eth1[&apos;ipv4&apos;][&apos;address&apos;] }}</code> will be replaced by the 
+IP of the load balancer on eth1. </p>
+<p>Then, we have a loop. This loop is used to build the backend servers list.
+It will loop over every host listed in the <code>[web]</code> group (and put this host in the 
+<code>backend</code> variable). For each of the hosts it will render a line using host&apos;s facts. 
+All hosts&apos; facts are exposed in the <code>hostvars</code> variable, so it&apos;s easy to access another 
+host variables (like its hostname or in this case IP).</p>
+<p>We could have written the host list by hand, since we have only 2 of them. But
+we&apos;re hoping that the server will be very successful, and that we&apos;ll need a
+hundred of them. Thus, adding servers to the configuration or swapping some
+out boils down to adding or removing hosts from the <code>[web]</code> group. </p>
+<h1 id="haproxy-playbook">HAProxy playbook</h1>
+<p>We&apos;ve done the most difficult part of the job. Writing a playbook to install and 
+configure HAproxy is a breeze:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">- hosts:</span> haproxy
+<span class="hljs-attr">  tasks:</span>
+<span class="hljs-attr">    - name:</span> Installs haproxy load balancer
+<span class="hljs-attr">      apt:</span> pkg=haproxy state=installed update_cache=<span class="hljs-literal">yes</span>
+
+<span class="hljs-attr">    - name:</span> Pushes configuration
+<span class="hljs-attr">      template:</span> src=templates/haproxy.cfg.j2 dest=/etc/haproxy/haproxy.cfg mode=<span class="hljs-number">0640</span> owner=root group=root
+<span class="hljs-attr">      notify:</span>
+<span class="hljs-bullet">        -</span> restart haproxy
+
+<span class="hljs-attr">    - name:</span> Sets default starting flag to <span class="hljs-number">1</span>
+<span class="hljs-attr">      lineinfile:</span> dest=/etc/default/haproxy regexp=<span class="hljs-string">&quot;^ENABLED&quot;</span> line=<span class="hljs-string">&quot;ENABLED=1&quot;</span>
+<span class="hljs-attr">      notify:</span>
+<span class="hljs-bullet">        -</span> restart haproxy 
+
+<span class="hljs-attr">  handlers:</span>
+<span class="hljs-attr">    - name:</span> restart haproxy
+<span class="hljs-attr">      service:</span> name=haproxy state=restarted
+</code></pre>
+<p>Looks familiar, isn&apos;t it? The only new module here is <code>template</code>, which has the same arguments 
+as <code>copy</code>. We also restrict this playbook to the group <code>haproxy</code>.</p>
+<p>And now... let&apos;s try this out. Since our inventory contains only hosts
+necessary for the cluster, we don&apos;t need to limit the host list and can even
+run both playbooks. Well, to tell the truth, we must run both of them at the same time, since the 
+haproxy playbook requires facts <em>from</em> the two webservers.
+In step-11 we&apos;ll show how to avoid this.</p>
+<pre><code class="lang-bash">$ ansible-playbook -i step-10/hosts step-10/apache.yml step-10/haproxy.yml
+
+PLAY [web] ********************* 
+
+GATHERING FACTS ********************* 
+ok: [host1.example.org]
+ok: [host2.example.org]
+
+TASK: [Updates apt cache] ********************* 
+ok: [host1.example.org]
+ok: [host2.example.org]
+
+TASK: [Installs necessary packages] ********************* 
+ok: [host1.example.org] =&gt; (item=apache2,libapache2-mod-php5,git)
+ok: [host2.example.org] =&gt; (item=apache2,libapache2-mod-php5,git)
+
+TASK: [Push future default virtual host configuration] ********************* 
+ok: [host2.example.org]
+ok: [host1.example.org]
+
+TASK: [Activates our virtualhost] ********************* 
+changed: [host1.example.org]
+changed: [host2.example.org]
+
+TASK: [Check that our config is valid] ********************* 
+changed: [host1.example.org]
+changed: [host2.example.org]
+
+TASK: [Rolling back - Restoring old default virtualhost] ********************* 
+skipping: [host1.example.org]
+skipping: [host2.example.org]
+
+TASK: [Rolling back - Removing out virtualhost] ********************* 
+skipping: [host1.example.org]
+skipping: [host2.example.org]
+
+TASK: [Rolling back - Ending playbook] ********************* 
+skipping: [host1.example.org]
+skipping: [host2.example.org]
+
+TASK: [Deploy our awesome application] ********************* 
+ok: [host2.example.org]
+ok: [host1.example.org]
+
+TASK: [Deactivates the default virtualhost] ********************* 
+changed: [host1.example.org]
+changed: [host2.example.org]
+
+TASK: [Deactivates the default ssl virtualhost] ********************* 
+changed: [host2.example.org]
+changed: [host1.example.org]
+
+NOTIFIED: [restart apache] ********************* 
+changed: [host2.example.org]
+changed: [host1.example.org]
+
+PLAY RECAP ********************* 
+host1.example.org              : ok=10   changed=5    unreachable=0    failed=0    
+host2.example.org              : ok=10   changed=5    unreachable=0    failed=0    
+
+
+
+PLAY [haproxy] ********************* 
+
+GATHERING FACTS ********************* 
+ok: [host0.example.org]
+
+TASK: [Installs haproxy load balancer] ********************* 
+changed: [host0.example.org]
+
+TASK: [Pushes configuration] ********************* 
+changed: [host0.example.org]
+
+TASK: [Sets default starting flag to 1] ********************* 
+changed: [host0.example.org]
+
+NOTIFIED: [restart haproxy] ********************* 
+changed: [host0.example.org]
+
+PLAY RECAP ********************* 
+host0.example.org              : ok=5    changed=4    unreachable=0    failed=0
+</code></pre>
+<p>Looks good. Now head to <a href="http://192.168.33.10/" _target="blank">http://192.168.33.10/</a> and
+see the result. Your cluster is deployed!</p>
+<p>you can even peek at HAProxy&apos;s statistics at
+<a href="http://192.168.33.10/haproxy?stats" _target="blank">http://192.168.33.10/haproxy?stats</a>.</p>
+<p>Now on to the next chapter about &quot;Variables again&quot;, in <a href="https://github.com/gossetx/ansible/tree/master/step-11" _target="blank">step-11</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../step-09/" class="navigation navigation-prev " aria-label="Previous page: 09 Extending to several hosts">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../step-11/" class="navigation navigation-next " aria-label="Next page: 11 Variables again">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10 Templates","level":"1.12","depth":1,"next":{"title":"11 Variables again","level":"1.13","depth":1,"path":"step-11/README.md","ref":"step-11/README.md","articles":[]},"previous":{"title":"09 Extending to several hosts","level":"1.11","depth":1,"path":"step-09/README.md","ref":"step-09/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.0.x","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"step-10/README.md","mtime":"2016-06-14T12:19:24.696Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-15T12:22:27.804Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

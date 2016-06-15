@@ -1,0 +1,587 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>12 Migrating to roles · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../step-99/" />
+    
+    
+    <link rel="prev" href="../step-11/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../step-00/">
+            
+                <a href="../step-00/">
+            
+                    
+                    00 Vagrant Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../step-01/">
+            
+                <a href="../step-01/">
+            
+                    
+                    01 Basic inventory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../step-02/">
+            
+                <a href="../step-02/">
+            
+                    
+                    02 First modules and facts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../step-03/">
+            
+                <a href="../step-03/">
+            
+                    
+                    03 Groups and variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../step-04/">
+            
+                <a href="../step-04/">
+            
+                    
+                    04 Playbooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../step-05/">
+            
+                <a href="../step-05/">
+            
+                    
+                    05 Playbooks, pushing files on nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../step-06/">
+            
+                <a href="../step-06/">
+            
+                    
+                    06 Playbooks and failures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../step-07/">
+            
+                <a href="../step-07/">
+            
+                    
+                    07 Playbook conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../step-08/">
+            
+                <a href="../step-08/">
+            
+                    
+                    08 Git module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../step-09/">
+            
+                <a href="../step-09/">
+            
+                    
+                    09 Extending to several hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../step-10/">
+            
+                <a href="../step-10/">
+            
+                    
+                    10 Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../step-11/">
+            
+                <a href="../step-11/">
+            
+                    
+                    11 Variables again
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    12 Migrating to roles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../step-99/">
+            
+                <a href="../step-99/">
+            
+                    
+                    99 The end
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >12 Migrating to roles</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ansible-tutorial">Ansible tutorial</h1>
+<h2 id="migrating-to-roles">Migrating to roles!</h2>
+<p>Now that our playbook is done, let&apos;s refactor everything! We&apos;ll replace
+our plays with roles. Roles are just a new way of organizing files but
+bring interesting features. I won&apos;t go into great lengths here, since
+they&apos;re listed in
+<a href="http://www.ansibleworks.com/docs/playbooks_roles.html#id5" _target="blank">Ansible&apos;s documentation</a>,
+but my favorite is probably roles dependencies: role B can depend on
+another role A. Thus, when applying role B, role A will automatically be
+applied too. We&apos;ll see this in the <a href="https://github.com/gossetx/ansible/tree/master/step-13" _target="blank">next
+chapter</a>,
+but for now, let&apos;s refactor our playbook to use roles.</p>
+<h1 id="roles-structures">Roles structures</h1>
+<p>Roles add a bit of &quot;magic&quot; to Ansible: they assume a specific file
+organization. While there is a suggested layout regarding roles, you can
+organize things the way you want using includes. However, role&apos;s
+conventions help building modular playbooks, and housekeeping will be
+much simpler.
+Rubyists would call this &quot;convention over configuration&quot;.</p>
+<p>The file layout for roles looks like this:</p>
+<pre><code>roles
+  |
+  |_some_role
+       |
+       |_defaults
+       |   |
+       |   |_main.yml
+       |   |_...
+       |
+       |_files
+       |   |
+       |   |_file1
+       |   |_...
+       |
+       |_handlers
+       |   |
+       |   |_main.yml
+       |   |_some_other_file.yml
+       |   |_ ...
+       |
+       |_meta
+       |   |
+       |   |_main.yml
+       |   |_some_other_file.yml
+       |   |_ ...
+       |
+       |_tasks
+       |   |
+       |   |_main.yml
+       |   |_some_other_file.yml
+       |   |_ ...
+       |
+       |_templates
+       |   |
+       |   |_template1.j2
+       |   |_...
+       |
+       |_vars
+           |
+           |_main.yml
+           |_some_other_file.yml
+           |_ ...
+</code></pre><p>Quite simple.
+The files named <code>main.yml</code> are not mandatory. However, when they exist,
+roles will add them to the play automatically.
+You can use this file to include other tasks, handlers, ... in the play.
+We&apos;ll see that in a minute.</p>
+<p>Note that there is also a <code>vars</code> and a <code>meta</code> directory. <code>vars</code> is used
+when you want to put a bunch of variables regarding the roles. However,
+I don&apos;t like setting vars in roles (or plays) directly. I think variables
+belong to configuration, while plays are the structure. In other words,
+I see plays and roles as a factory, and data as inputs to this factory.
+So I really prefer to have &quot;data&quot; (e.g. variables) outside roles and
+play. This way, I can share my roles more easily, without worrying about
+exposing too much about my servers. But that&apos;s just a personal
+preference. Ansible just lets you do it the way you want.</p>
+<p>But you have some vars that you hardly want to change. For instance, if
+you have a role for nginx that pulls the .deb package from a PPA, you
+might want to add the PPA address in <code>vars/main.yml</code>. It is something
+that you <em>can</em> configure, but that will be mostly static 99% of the
+time. Using <code>vars</code> will let you pull out this information out of your
+role, making it more generic. But really, this is a matter of taste.</p>
+<p>However, for real vars (e.g. things you would like to use in a
+configuration file generated by a template), you can set defaults for
+roles, and this is a recommended practice. Using sane defaults ensures
+your role always work.
+For instance, you could set the number of pre-forked servers for your
+apache server. The best place to put the defaults is... you guessed it,
+the <code>defaults</code> directory.</p>
+<p>The <code>meta</code> directory is where you can add dependencies, and it&apos;s really
+a neat feature. We&apos;ll see that later.</p>
+<p>Note that roles sit in the <code>roles</code> directory, which is also cool since
+it will reduce top level ansible playbook clutter. But you can configure
+Ansible to use an alternate directory to store role (see <a href="http://docs.ansible.com/intro_configuration.html#roles-path" _target="blank"><code>roles_path</code>
+variable in <code>ansible.cfg</code></a>).
+This way you can setup a &apos;central place &apos; for all your roles, and use
+them in all your playbooks.</p>
+<h1 id="creating-the-apache-role">Creating the Apache role</h1>
+<p>Ok, now that we know the required layout, we can create our apache role
+from our apache playbook.</p>
+<p>The steps required are really simple:</p>
+<ul>
+<li>create the roles directory and apache role layout</li>
+<li>extract the apache handler into <code>roles/apache/handlers/main.yml</code></li>
+<li>move the apache configuration file <code>awesome-app</code> into
+<code>roles/apache/files/</code></li>
+<li>create a role playbook</li>
+</ul>
+<h2 id="creating-the-role-layout">Creating the role layout</h2>
+<p>This is what has been done to convert step-11 apache files into a role:</p>
+<pre><code class="lang-bash">mkdir -p step-12/roles/apache/{tasks,handlers,files}
+</code></pre>
+<p>Now we need to copy the tasks from <code>apache.yml</code> to <code>main.yml</code>, so this
+file looks like this:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">- name:</span> Updates apt cache
+<span class="hljs-attr">  apt:</span> update_cache=<span class="hljs-literal">true</span>
+
+<span class="hljs-attr">- name:</span> Installs necessary packages
+<span class="hljs-attr">  apt:</span> pkg={{ item }} state=latest
+<span class="hljs-attr">  with_items:</span>
+<span class="hljs-bullet">    -</span> apache2
+<span class="hljs-bullet">    -</span> libapache2-mod-php5
+<span class="hljs-bullet">    -</span> git
+
+...
+
+<span class="hljs-attr">- name:</span> Deactivates the default ssl virtualhost
+<span class="hljs-attr">  command:</span> a2dissite default-ssl
+<span class="hljs-attr">  notify:</span>
+<span class="hljs-bullet">    -</span> restart apache
+</code></pre>
+<p>The file is not fully reproduced, but it is exactly the content of
+<code>apache.yml</code> between <code>tasks:</code> and <code>handlers:</code>.</p>
+<p>Note that we also have to remove references to <code>files/</code> and <code>templates/</code>
+directories in tasks. Since we&apos;re using the roles structure, Ansible
+will look for them in the right directories.</p>
+<h2 id="extracting-the-handler">Extracting the handler</h2>
+<p>We can extract the handlers part and create
+<code>step-12/roles/apache/handlers/main.yml</code>:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">- name:</span> restart apache
+<span class="hljs-attr">  service:</span> name=apache2 state=restarted
+</code></pre>
+<h2 id="moving-the-configuration-file">Moving the configuration file</h2>
+<p>As simple as:</p>
+<pre><code class="lang-bash">cp step-11/files/awesome-app step-12/roles/apache/files/
+</code></pre>
+<p>At this point, the apache role is fully working, but we need a way to
+invoke it.</p>
+<h2 id="create-a-role-playbook">Create a role playbook</h2>
+<p>Let&apos;s create a top level playbook that we&apos;ll use to map hosts and host
+groups to roles. We&apos;ll call it <code>site.yml</code>, since our goal is to have our
+site-wide configuration in it. While we&apos;re at it, we&apos;ll include
+<code>haproxy</code> in it too:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">- hosts:</span> web
+<span class="hljs-attr">  roles:</span>
+<span class="hljs-bullet">    -</span> { role: apache }
+
+<span class="hljs-attr">- hosts:</span> haproxy
+<span class="hljs-attr">  roles:</span>
+<span class="hljs-bullet">    -</span> { role: haproxy }
+</code></pre>
+<p>That wasn&apos;t too hard. </p>
+<p>Now let&apos;s create the haproxy role:</p>
+<pre><code class="lang-bash">mkdir -p step-12/roles/haproxy/{tasks,handlers,templates}
+cp step-11/templates/haproxy.cfg.j2 step-12/roles/haproxy/templates/
+</code></pre>
+<p>then extract the handler, and remove reference to <code>templates/</code>.</p>
+<p>We can try out our new playbook with:</p>
+<pre><code class="lang-bash">ansible-playbook -i step-12/hosts step-12/site.yml
+</code></pre>
+<p>If eveything goes well, we should end up with a happy &quot;PLAY RECAP&quot; like
+this one:</p>
+<pre><code>host0.example.org          : ok=5    changed=2    unreachable=0 failed=0
+host1.example.org          : ok=10   changed=5    unreachable=0 failed=0
+host2.example.org          : ok=10   changed=5    unreachable=0 failed=0
+</code></pre><p>You may have noticed that running all roles in site.yml can take a long
+time.  What if you only wanted to push changes to web?  This is also
+easy, with the limit flag:</p>
+<pre><code>ansible-playbook -i step-12/hosts -l web step-12/site.yml
+</code></pre><p>This concludes our migration to roles.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../step-11/" class="navigation navigation-prev " aria-label="Previous page: 11 Variables again">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../step-99/" class="navigation navigation-next " aria-label="Next page: 99 The end">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"12 Migrating to roles","level":"1.14","depth":1,"next":{"title":"99 The end","level":"1.15","depth":1,"path":"step-99/README.md","ref":"step-99/README.md","articles":[]},"previous":{"title":"11 Variables again","level":"1.13","depth":1,"path":"step-11/README.md","ref":"step-11/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.0.x","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"step-12/README.md","mtime":"2016-06-15T12:21:42.214Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2016-06-15T12:22:27.804Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
