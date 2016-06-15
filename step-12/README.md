@@ -232,13 +232,4 @@ easy, with the limit flag:
 
     ansible-playbook -i step-12/hosts -l web step-12/site.yml
 
-This concludes our migration to roles. It was quite easy, and adds a
-bunch of features to our playbook that we'll use in a future step.
-
-In
-[step-13](https://github.com/gossetx/ansible/tree/master/step-13),
-we will see how we can use tags to select which parts of our playbook we
-want to run.
-
-
-
+This concludes our migration to roles.
